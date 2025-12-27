@@ -36,7 +36,7 @@ export default defineSchema({
     //Date&time
     startDate: v.number(),
     endDate: v.number(),
-    timeZone: v.string(),
+    timezone: v.string(),
 
     // Location
     locationType: v.union(v.literal("physical"), v.literal("online")),
@@ -44,6 +44,7 @@ export default defineSchema({
     address: v.optional(v.string()),
     city: v.string(),
     state: v.optional(v.string()),
+    country: v.string(),
 
     // Capacity & Ticketing
     capacity: v.number(),
