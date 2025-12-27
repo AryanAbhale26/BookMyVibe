@@ -20,6 +20,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "BookMyVibe",
   description: "Create and book amazing events",
+  icons: {
+    icon: "/BookMyShow_idCkXJezbd_0.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
