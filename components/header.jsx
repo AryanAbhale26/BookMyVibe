@@ -31,11 +31,11 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 bg-clip-text text-transparent">
+            <span className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-teal-500 to-emerald-400 bg-clip-text text-transparent">
               BookMyVibe
             </span>
             {hasPro && (
-              <Badge className="bg-linear-to-r from-pink-500 to-orange-500 gap-1 text-white ml-3">
+              <Badge className="bg-linear-to-r from-cyan-500 to-emerald-500 gap-1 text-white ml-3">
                 <Crown className="w-3 h-3" />
                 Pro
               </Badge>

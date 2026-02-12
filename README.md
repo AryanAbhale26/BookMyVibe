@@ -1,7 +1,3 @@
-# AI Event Organiser
-
-A full-stack event management platform built with Next.js, Convex, Clerk, and Tailwind CSS.
-
 # 🎉 BookMyVibe
 
 A **Full Stack AI Event Management Platform** designed to modernize event organization with AI-powered features and a user-friendly interface.
@@ -11,6 +7,11 @@ A **Full Stack AI Event Management Platform** designed to modernize event organi
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Convex](https://img.shields.io/badge/Convex-FF6B6B?style=for-the-badge)
 ![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk)
+
+## 🎥 Demo
+
+<!-- Replace the video URL below with your actual demo video -->
+[Watch the Demo Video](VIDEO_LINK_HERE)
 
 ## ✨ Features
 
@@ -72,6 +73,7 @@ Fully responsive and attractive user interface that works seamlessly across all 
 | **Frontend**          | React 19, Next.js 16, Tailwind CSS, Shadcn UI |
 | **Backend**           | Convex (Database & Serverless Functions)      |
 | **Authentication**    | Clerk                                         |
+| **AI Integration**    | Google Gemini AI                              |
 | **Design & Planning** | Mobbin                                        |
 | **Code Review**       | Code Rabbit                                   |
 
@@ -173,4 +175,17 @@ CLERK_JWT_ISSUER_DOMAIN=
 NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
 GEMINI_API_KEY=
 ```
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<p align="center">Made with ❤️ by the BookMyVibe Team</p>
 3v_KSLB9b3fm3QXNosCGdx0-_XRQsaa0nznDyrpLe4A

@@ -119,6 +119,12 @@
 
   body {
     @apply bg-background text-foreground;
+    cursor: url('/navigation.png') 12 12, auto;
+  }
+  
+  /* Custom cursor for interactive elements */
+  a, button, [role="button"], input[type="submit"], input[type="button"] {
+    cursor: url('/navigation.png') 12 12, pointer;
   }
 }
 
