@@ -83,12 +83,14 @@ Fully responsive and attractive user interface that works seamlessly across all 
 
 ### Prerequisites
 
-- Node.js 18+
-- npm or yarn
-- Convex account
-- Clerk account
+- **Node.js**: Version 18 or higher
+- **Package Manager**: npm, yarn, or pnpm
+- **Accounts**:
+  - [Convex](https://www.convex.dev/) account for the backend
+  - [Clerk](https://clerk.com/) account for authentication
+  - [Google AI Studio](https://aistudio.google.com/) account for Gemini API
 
-### Installation
+### Installation & Setup
 
 1. **Clone the repository**
 
@@ -103,22 +105,59 @@ Fully responsive and attractive user interface that works seamlessly across all 
    npm install
    ```
 
-3. **Set up environment variables**
+3. **Set up Authentication (Clerk)**
 
-   ```bash
-   cp .env.example .env.local
+   - Create a new application in Clerk.
+   - Copy the `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY`.
+   - Add the following URLs to your Clerk application paths:
+     - Sign in: `/sign-in`
+     - Sign up: `/sign-up`
+
+4. **Set up Database (Convex)**
+
+   - Initialize Convex in your project:
+     ```bash
+     npx convex dev
+     ```
+   - This will prompt you to log in and create a new project.
+   - It will automatically generate the `CONVEX_DEPLOYMENT` and `NEXT_PUBLIC_CONVEX_URL` in your `.env.local` file.
+
+5. **Configure Environment Variables**
+
+   - Create a `.env.local` file in the root directory.
+   - Add the following variables (see the bottom of this README for the template):
+
+   ```env
+   # Deployment used by `npx convex dev`
+   CONVEX_DEPLOYMENT=generated_by_convex
+   NEXT_PUBLIC_CONVEX_URL=generated_by_convex
+
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+   CLERK_SECRET_KEY=sk_test_...
+
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+   # Get this from https://aistudio.google.com/
+   GEMINI_API_KEY=your_gemini_api_key
    ```
 
-   Fill in your Convex and Clerk credentials.
+6. **Run the Application**
 
-4. **Run the development server**
+   You need to run both the backend and frontend:
 
+   **Terminal 1 (Backend):**
+   ```bash
+   npx convex dev
+   ```
+
+   **Terminal 2 (Frontend):**
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+7. **Open the App**
+   Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
@@ -126,35 +165,40 @@ Fully responsive and attractive user interface that works seamlessly across all 
 
 ```
 bookmyvibe/
-├── app/                # Next.js App Router
-├── components/         # Reusable UI components
-│   └── ui/            # Shadcn UI components
-├── lib/               # Utility functions
-├── public/            # Static assets
-└── convex/            # Convex backend functions
+├── app/                        # Next.js App Router
+│   ├── (auth)/                # Authentication routes (sign-in, sign-up)
+│   ├── (main)/                # Main application routes
+│   │   ├── create-event/      # Event creation flow
+│   │   ├── my-events/         # User's events dashboard
+│   │   └── my-tickets/        # User's tickets
+│   ├── (public)/              # Public routes (explore, event details)
+│   ├── api/                   # API routes (Gemini integration)
+│   ├── globals.css            # Global styles and custom cursor
+│   ├── layout.js              # Root layout with providers
+│   └── page.js                # Integrated Landing Page
+├── components/                 # Reusable UI components
+│   ├── ui/                    # Shadcn UI primitives
+│   ├── event-card.jsx         # Event display component
+│   ├── footer.jsx             # Site footer
+│   ├── header.jsx             # Main navigation header
+│   ├── onboarding-modal.jsx   # User onboarding
+│   ├── search-location-bar.jsx# Search functionality
+│   └── unsplash-image-picker.jsx # Image selection
+├── convex/                    # Backend API & Database
+│   ├── auth.config.js         # Clerk authentication setup
+│   ├── events.js              # Event management logic
+│   ├── registrations.js       # Ticket handling
+│   ├── schema.js              # Database schema
+│   └── users.js               # User management
+├── lib/                       # Utilities
+│   ├── utils.js               # Helper functions
+│   └── location-utils.js      # Location services
+└── public/                    # Static assets
+    └── navigation.png         # Custom cursor image
 ```
 
 ---
 
-## 🚀 Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-<p align="center">Made with ❤️ by the BookMyVibe Team</p>
 
 ### Make sure to create a `.env` file with following variables -
 
