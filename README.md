@@ -4,6 +4,8 @@
 ## 🎥 Demo
 <!-- Replace the video URL below with your actual demo video -->
 [Watch the Demo Video](VIDEO_LINK_HERE)
+
+
 A **Full Stack AI Event Management Platform** designed to modernize event organization with AI-powered features and a user-friendly interface.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
