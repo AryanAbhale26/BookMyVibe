@@ -1,5 +1,9 @@
-# 🎉 BookMyVibe
+#  BookMyVibe
 
+
+## 🎥 Demo
+<!-- Replace the video URL below with your actual demo video -->
+[Watch the Demo Video](VIDEO_LINK_HERE)
 A **Full Stack AI Event Management Platform** designed to modernize event organization with AI-powered features and a user-friendly interface.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
@@ -8,10 +12,6 @@ A **Full Stack AI Event Management Platform** designed to modernize event organi
 ![Convex](https://img.shields.io/badge/Convex-FF6B6B?style=for-the-badge)
 ![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk)
 
-## 🎥 Demo
-
-<!-- Replace the video URL below with your actual demo video -->
-[Watch the Demo Video](VIDEO_LINK_HERE)
 
 ## ✨ Features
 
@@ -135,26 +135,6 @@ bookmyvibe/
 ```
 
 ---
-
-## 🚀 Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-<p align="center">Made with ❤️ by the BookMyVibe Team</p>
 
 ### Make sure to create a `.env` file with following variables -
 
