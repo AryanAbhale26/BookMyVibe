@@ -201,7 +201,7 @@ bookmyvibe/
 
 ---
 
-<<<<<<< HEAD
+
 
 =======
 ### Make sure to create a `.env` file with following variables -
@@ -224,7 +224,7 @@ NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
 GEMINI_API_KEY=
 ```
 ---
->>>>>>> 7386f76d66a65f10ae8a2f5344af091d7b330b1a
+
 
 ## 🤝 Contributing
 
