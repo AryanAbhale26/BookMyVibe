@@ -1,4 +1,10 @@
-# 🎉 BookMyVibe
+#  BookMyVibe
+
+
+## 🎥 Demo
+<!-- Replace the video URL below with your actual demo video -->
+[Watch the Demo Video](VIDEO_LINK_HERE)
+
 
 A **Full Stack AI Event Management Platform** designed to modernize event organization with AI-powered features and a user-friendly interface.
 
@@ -8,10 +14,6 @@ A **Full Stack AI Event Management Platform** designed to modernize event organi
 ![Convex](https://img.shields.io/badge/Convex-FF6B6B?style=for-the-badge)
 ![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk)
 
-## 🎥 Demo
-
-<!-- Replace the video URL below with your actual demo video -->
-[Watch the Demo Video](VIDEO_LINK_HERE)
 
 ## ✨ Features
 
@@ -199,7 +201,30 @@ bookmyvibe/
 
 ---
 
+<<<<<<< HEAD
 
+=======
+### Make sure to create a `.env` file with following variables -
+
+```
+# Deployment used by `npx convex dev`
+CONVEX_DEPLOYMENT=
+
+NEXT_PUBLIC_CONVEX_URL=
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+CLERK_JWT_ISSUER_DOMAIN=
+
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
+GEMINI_API_KEY=
+```
+---
+>>>>>>> 7386f76d66a65f10ae8a2f5344af091d7b330b1a
 
 ## 🤝 Contributing
 
