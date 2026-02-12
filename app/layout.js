@@ -8,8 +8,8 @@ import { ConvexClientProvider } from "@/components/convex-client-provider";
 import { Toaster } from "sonner";
 
 export const metadata = {
-  title: "Spott - Delightful Events Start Here",
-  description: "Discover and create amazing events",
+  title: "BookMyVibe - AI-Powered Event Management",
+  description: "Discover and create amazing events with AI-powered event management platform",
 };
 
 export default function RootLayout({ children }) {
